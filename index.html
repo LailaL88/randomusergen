@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js project</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="app">
+        <div :class="gender" class="img-wrap">
+        <img  v-bind:src="picture" v-bind:alt="firstName">
+        </div>
+        <h1>{{firstName}} {{lastName}}</h1>
+        <h3 class="email">Email: {{email}}</h3>
+        <button :class="gender" v-on:click='getUser()'>Get random user</button>
+    </div>
+    <script src="https://unpkg.com/vue@3.1.2"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
